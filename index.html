@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Bhavi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Bhavi</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#blogs">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Bhavatharani</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Welcome to my portfolio. Explore to know more about me!</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/bhavatharanigithub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bhavatharani-j-3760a6322?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvRCWvGvBS5qXYLDWW9tWlA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/BhavatharniJ?s=08"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="Bhavatharani_CV.pdf" download="Bhavatharani_CV.pdf">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-container">
+            <h2 data-aos="fade-up">About Me</h2>
+            <p data-aos="fade-up" data-aos-delay="200">I am Bhavatharani, a passionate web developer and designer dedicated to creating seamless user experiences. My journey in web development has been driven by creativity and innovation.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container">
+            <h2 data-aos="fade-up">Skills</h2>
+            <ul data-aos="fade-up" data-aos-delay="200">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React & Angular</li>
+                <li>Python & Django</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-container">
+            <h2 data-aos="fade-up">Services</h2>
+            <div class="services-grid">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Web Development</h3>
+                    <p>I create responsive, functional, and visually appealing websites.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and engaging user interfaces is my forte.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored solutions to meet your unique business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <div class="section-container">
+            <h2 data-aos="fade-up">Blogs</h2>
+            <div class="blog-grid">
+                <div class="blog-post" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Mastering Responsive Design: Tips and Tricks</h3>
+                    <p>Learn how to create stunning websites that look amazing on any device with these essential responsive design techniques.</p>
+                </div>
+                <div class="blog-post" data-aos="fade-up" data-aos-delay="400">
+                    <h3>The Future of Web Development: Trends to Watch</h3>
+                    <p>Discover the top trends shaping the web development industry, from AI integration to Progressive Web Apps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <div class="section-container">
+            <h2 data-aos="fade-up">Contact Me</h2>
+            <form action="#" method="post" data-aos="fade-up" data-aos-delay="200">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
+
